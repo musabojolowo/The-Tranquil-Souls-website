@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Tranquil Souls</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>THE TRANQUIL SOULS</h1>
+    <nav>
+        <img src="images/soul.jpg" alt="logo">
+
+      <p><a href="#about">About</a>
+      <a href="#contact">Contact</a></p>
+    </nav>
+  </header>
+  <section id="HADITH">
+    <h2>HADITH</h2>
+    <p>Prophet Muhammad مّسل و عليه هللّٱ صلى narrated by Hakim Ibn 
+Izzam “The best charity is that which is given when one has surplus wealth; and the upper 
+hand is better than lower hand. But in giving charity begin with your dependants.”</p>
+<div class="date-time"id ="dateTime"></div>
+  </section>
+
+  
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Us</h2>
+    <p>The Tranquil Souls is an Islamic learning and reflection platform designed to guide individuals towards spiritual clarity and purposeful living. By connecting the teachings of the Qur’an and Sunnah with modern life, we inspire believers to cultivate inner peace and a deeper connection with their Creator.
+</p>
+  </section>
+  <!-- Contact -->
+  <section id="contact">
+    <h2>For Enquiry</h2>
+    
+    <p>📞 <a href="tel:+2348182624218">+2348182624218</a>
+    <a href="tel:+234802 434 8605">+234802 434 8605</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; The Tranquil Souls. All rights reserved.</p>
+  </footer>
+</body>
+<script>
+  function updateDateTime() {
+    const now = new Date();
+    const dateTimeString = now.toLocaleString(); // e.g., "10/26/2025, 8:45 PM"
+    document.getElementById("dateTime").textContent = dateTimeString;
+  }
+
+  updateDateTime(); // initial call
+  setInterval(updateDateTime, 1000); // update every second
+</script>
+
+
+</html>
