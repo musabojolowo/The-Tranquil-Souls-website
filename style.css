@@ -106,15 +106,18 @@ img {
         }
          /* Sidebar */
     .sidebar {
-  position: fixed;
-  bottom: 20px;
-  left: 20px;
-  background-color: transparent;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-  z-index: 1000;
-}
+      height: 100%;
+      width: 0;
+      position: fixed;
+      top: 10;
+      left: 10;
+      background-color: white;
+      overflow-x: hidden;
+      transition: 0.3s;
+      padding-top: 60px;
+      text-align: left;
+      z-index: 1000;
+    }
      .sidebar a {
       padding: 10px 20px;
       text-decoration: none;
@@ -132,16 +135,10 @@ img {
       height: 25px;
       margin-right: 10px;
     }
-    .sidebar button {
-        width: 25px;
-        height: 25px;
-        margin-right: 10px;
-        align-items: center;
-    }
      /* Icon button */
     .icon-btn {
       position:relative;
-      top: 40px;
+      top: 30px;
       left: 0px;
       cursor: pointer;
       z-index: 10001;
@@ -196,6 +193,7 @@ body {
       transition: 0.3s;
       padding-top: 60px;
       text-align: left;
+       z-index: 1000;
     }
     .dark-mode .sidebar a{
       color: white;
@@ -203,6 +201,7 @@ body {
     .dark-mode .sidebar{
       background-color: #222;
     }
+
 
 
 
