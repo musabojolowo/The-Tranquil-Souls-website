@@ -106,17 +106,15 @@ img {
         }
          /* Sidebar */
     .sidebar {
-      height: 100%;
-      width: 0;
-      position: fixed;
-      top: 10;
-      left: 10;
-      background-color: #688662;
-      overflow-x: hidden;
-      transition: 0.3s;
-      padding-top: 60px;
-      text-align: left;
-    }
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1000;
+}
      .sidebar a {
       padding: 10px 20px;
       text-decoration: none;
@@ -142,11 +140,11 @@ img {
     }
      /* Icon button */
     .icon-btn {
-      position:fixed;
-      top: 0px;
-      left: 10px;
+      position:relative;
+      top: 40px;
+      left: 0px;
       cursor: pointer;
-      z-index: 2;
+      z-index: 10;
     }
 
     .icon-btn img {
@@ -205,5 +203,6 @@ body {
     .dark-mode .sidebar{
       background-color: #222;
     }
+
 
 
