@@ -148,7 +148,7 @@ img {
     }
 
     .icon-btn img {
-      width: 30px; /* adjust size */
+      width: 40px; /* adjust size */
       height: auto;
     }
 
@@ -203,6 +203,7 @@ body {
     .dark-mode .sidebar{
       background-color: #222;
     }
+
 
 
 
