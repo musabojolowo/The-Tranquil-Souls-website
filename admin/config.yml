@@ -1,19 +1,25 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: musabojolowo/The-Tranquil-Souls-website
   branch: main
+  auth_type: "oauth"
+
+# Enable local backend for development (optional)
+local_backend: true
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
+# Use editorial workflow if you want drafts/reviews
+publish_mode: editorial_workflow
+
 collections:
   - name: "posts"
     label: "Posts"
-    folder: "post"
+    folder: "content/posts"
     create: true
-    slug: "{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Date", name: "date", widget: "datetime" }
-      - { label: "Summary", name: "summary", widget: "text", required: false }
-      - { label: "Featured Image", name: "thumbnail", widget: "image", required: false }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Body", name: "body", widget: "markdown"}
