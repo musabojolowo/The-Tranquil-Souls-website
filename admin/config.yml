@@ -1,22 +1,28 @@
 backend:
   name: git-gateway
-  branch: main
+  branch: main  # Ensure this matches your Netlify deployment branch
 
-media_folder: "images/uploads"
-public_folder: "/images/uploads"
-
-# Set local_backend to false in production
-local_backend: false
-
-publish_mode: editorial_workflow
+media_folder: "images" # Folder where uploaded media will be saved
 
 collections:
+  # 1. Collection for new blog-style posts
   - name: "posts"
-    label: "Posts"
-    folder: "content/posts"
+    label: "Blog Posts"
+    folder: "_posts"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Author", name: "author", widget: "string", default: "The Tranquil Souls"}
       - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
+
+  # 2. Collection for the single editable Hadith entry (for the homepage)
+  - name: "hadith"
+    label: "Homepage Hadith"
+    folder: "_data" # Use a different folder for single-content files
+    file: "hadith.md" # Specify the single file path
+    fields:
+      - {label: "Hadith Title", name: "title", widget: "string", default: "HADITH"}
+      - {label: "Hadith Text", name: "body", widget: "markdown"}
