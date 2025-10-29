@@ -1,9 +1,6 @@
 backend:
-  name: github
-  repo: musabojolowo/The-Tranquil-Souls-website
+  name: git-gateway
   branch: main
-
-site_url: https://thetranquilsoulsr.netlify.app
 
 media_folder: "images"
 public_folder: "/images"
