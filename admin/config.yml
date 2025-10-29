@@ -1,11 +1,12 @@
 backend:
   name: github
-  repo: musabojolowo/thetranquilsoulsg   # 👈 your GitHub username/repo
-  branch: main                            # or master (check your repo branch name)
+  repo: musabojolowo/The-Tranquil-Souls-website
+  branch: main
+
+site_url: https://thetranquilsoulsr.netlify.app
 
 media_folder: "images"
 public_folder: "/images"
-
 
 collections:
   - name: "posts"
