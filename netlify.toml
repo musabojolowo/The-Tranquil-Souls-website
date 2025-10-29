@@ -1,4 +1,5 @@
 [[headers]]
   for = "/*"
   [headers.values]
+    # Allow CMS scripts to run safely
     Content-Security-Policy = "script-src 'self' 'unsafe-eval' https://identity.netlify.com https://cdn.jsdelivr.net https://unpkg.com; object-src 'self'"
