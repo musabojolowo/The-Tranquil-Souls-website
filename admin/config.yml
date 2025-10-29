@@ -1,0 +1,25 @@
+backend:
+  name: git-gateway
+  branch: main  # your repo's default branch
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+site_url: "https://thetranquilsoulsg.netlify.app"
+display_url: "https://thetranquilsoulsg.netlify.app"
+
+collections:
+  - name: "posts"
+    label: "Daily Posts"
+    folder: "posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    summary: "{{title}} — {{date}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD" }
+      - { label: "Category", name: "category", widget: "select", options: ["Hadith", "Reminder", "Quote", "Reflection"] }
+      - { label: "Image", name: "image", widget: "image", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
