@@ -1,8 +1,4 @@
-[build]
-  publish = "."
-  functions = "netlify/function"
-
-[[redirects]]
-  from = "/admin"
-  to = "/admin/index.html"
-  status = 200
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Content-Security-Policy = "script-src 'self' 'unsafe-eval' https://identity.netlify.com https://cdn.jsdelivr.net https://unpkg.com; object-src 'self'"
