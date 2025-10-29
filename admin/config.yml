@@ -1,9 +1,11 @@
 backend:
-  name: git-gateway
-  branch: main  # or master (check your repo branch name)
+  name: github
+  repo: musabojolowo/thetranquilsoulsg   # 👈 your GitHub username/repo
+  branch: main                            # or master (check your repo branch name)
 
-media_folder: "images"       # Where uploaded images are stored
-public_folder: "/images"     # How they're accessed in the site
+media_folder: "images"
+public_folder: "/images"
+
 
 collections:
   - name: "posts"
