@@ -2,8 +2,8 @@ backend:
   name: git-gateway
   branch: main  # your repo's default branch
 
-media_folder: "assets/uploads"
-public_folder: "/assets/uploads"
+media_folder: "images"
+public_folder: "/images"
 
 site_url: "https://thetranquilsoulsg.netlify.app"
 display_url: "https://thetranquilsoulsg.netlify.app"
