@@ -1,0 +1,24 @@
+{
+    "tasks": {
+        "import": {
+            "operation": "import/upload"
+        },
+        "convert": {
+            "operation": "convert",
+            "input": "import",
+            "input_format": "png",
+            "output_format": "ico",
+            "options": {
+                "ico_format_size": "__autoresize__",
+                "auto-orient": true,
+                "strip": true
+            }
+        },
+        "export-url": {
+            "operation": "export/url",
+            "input": [
+                "convert"
+            ]
+        }
+    }
+}
