@@ -5,18 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Content Manager</title>
 
-  <!-- Netlify Identity Widget (for login) -->
+  <!-- Netlify Identity Widget -->
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
-  <!-- ✅ Correct CDN for Netlify CMS -->
-  <script src="https://unpkg.com/netlify-cms-app@^2.15.83/dist/netlify-cms.js"></script>
+  <!-- ✅ Latest working CMS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/netlify-cms-app@^3.5.0/dist/netlify-cms.js"></script>
 </head>
 <body>
   <script>
     if (window.NetlifyCmsApp) {
       window.NetlifyCmsApp.init();
+      console.log("✅ Netlify CMS loaded successfully");
     } else {
-      console.error("❌ NetlifyCmsApp still not loaded");
+      console.error("❌ NetlifyCmsApp failed to load.");
     }
   </script>
 </body>
