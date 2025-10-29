@@ -8,22 +8,8 @@
     <!-- Mount point for Netlify CMS -->
     <div id="nc-root"></div>
 
-    <!-- Load Netlify CMS (stable version) -->
-    <script src="https://unpkg.com/netlify-cms-app@2.10.192/dist/netlify-cms.js"></script>
-
-    <!-- Initialize CMS -->
-    <script>
-      window.addEventListener("load", function () {
-        if (window.NetlifyCmsApp) {
-          console.log("✅ Netlify CMS loaded successfully");
-          window.NetlifyCmsApp.init();
-        } else if (window.CMS) {
-          console.log("✅ CMS loaded successfully (fallback)");
-          window.CMS.init();
-        } else {
-          console.error("❌ Netlify CMS failed to load.");
-        }
-      });
-    </script>
+    <!-- Load latest Netlify CMS -->
+    <script src="https://unpkg.com/netlify-cms@latest/dist/netlify-cms.js"></script>
+    <script src="cms-init.js"></script>
   </body>
 </html>
