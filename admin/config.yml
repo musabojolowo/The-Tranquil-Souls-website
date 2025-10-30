@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: "https://github.com/musabojolowo/The-Tranquil-Souls-website"   # Replace with your GitHub username/repo
+  repo: https://github.com/musabojolowo/The-Tranquil-Souls-website  # Replace with your GitHub username/repo
   branch: main               # Branch you want CMS to commit to
 
 media_folder: "images"
