@@ -1,12 +1,12 @@
 backend:
   name: git-gateway
   branch: main
-  identity_url: "https://thetranquilsoulsm.netlify.app/.netlify/identity"
-  gateway_url: "https://thetranquilsoulsm.netlify.app/.netlify/git"
-  logo_url: "https://thetranquilsoulsm.netlify.app/images/logo.png
 
 media_folder: "images"
 public_folder: "/images"
+
+logo_url: "/images/soul.png" # Path to your logo in the images folder
+site_url: "https://https://thetranquilsoulsm.netlify.app/" # Replace with your site URL
 
 collections:
   - name: "posts"
@@ -16,6 +16,7 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Author", name: "author", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime" }
-      - { label: "Image", name: "image", widget: "image", required: false }
+      - { label: "Featured Image", name: "thumbnail", widget: "image", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
