@@ -5,7 +5,7 @@ backend:
 media_folder: "images"
 public_folder: "/images"
 
-logo_url: "/images/logo.png"
+logo_url: "/images/soul.png"
 site_url: "https://thetranquilsoulsm.netlify.app/"
 
 collections:
