@@ -5,8 +5,8 @@ backend:
 media_folder: "images"
 public_folder: "/images"
 
-logo_url: "/images/soul.png" # Path to your logo in the images folder
-site_url: "https://https://thetranquilsoulsm.netlify.app/" # Replace with your site URL
+logo_url: "/images/logo.png"
+site_url: "https://thetranquilsoulsm.netlify.app/"
 
 collections:
   - name: "posts"
@@ -15,8 +15,19 @@ collections:
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Author", name: "author", widget: "string" }
-      - { label: "Date", name: "date", widget: "datetime" }
-      - { label: "Featured Image", name: "thumbnail", widget: "image", required: false }
-      - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Author"
+        name: "author"
+        widget: "string"
+      - label: "Date"
+        name: "date"
+        widget: "datetime"
+      - label: "Featured Image"
+        name: "thumbnail"
+        widget: "image"
+        required: false
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
